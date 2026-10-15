@@ -1,0 +1,103 @@
+# ==========================================
+# Git Ignore - Anki Flashcards IA (AnkiCraft)
+# ==========================================
+
+# Secrets and environment variables (CRITICAL)
+.env
+.env.*
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+*.env
+!*.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+backend/.venv/
+backend/venv/
+
+# Testing & Quality
+.pytest_cache/
+.hypothesis/
+backend/.pytest_cache/
+backend/.hypothesis/
+.coverage
+htmlcov/
+test-results/
+playwright-report/
+blob-report/
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Databases, Local Storage & Knowledge DB
+backend/data/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+collection.anki2
+
+# Logs
+logs/
+backend/logs/
+*.log
+
+# Personal Anki Decks & Exports
+*.apkg
+exports/
+backend/exports/
+scratch_apkg/
+
+# Scratch, benchmark & local debug scripts (May contain private keys/notes)
+scratch/
+backend/scratch/
+backend/scratch_*.py
+backend/scratch_*.json
+audit_cards.json
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
